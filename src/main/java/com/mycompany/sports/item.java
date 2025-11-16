@@ -147,7 +147,7 @@ public class item extends javax.swing.JFrame {
     String SQL= "SELECT * FROM Item";
   try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","harshit10");
+            Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
             stmt= con.createStatement();
 
                 String iid = id.getText();
@@ -189,7 +189,7 @@ public class item extends javax.swing.JFrame {
     String SQL= "SELECT * FROM Item";
     try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","harshit10");
+            Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
             stmt= con.createStatement();
             rs=stmt.executeQuery(SQL);
             while(rs.next()){

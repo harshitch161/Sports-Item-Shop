@@ -97,7 +97,7 @@ public class LogIn extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         String id="harshit@sport.com";
-        String ipass="bsports21";
+        String ipass="";
         String passw= new String(jPasswordField1.getPassword());
         String Login=new String(jTextField1.getText());
         if(passw.equals(ipass)&& Login.equals(id)){

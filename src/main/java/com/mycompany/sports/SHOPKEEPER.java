@@ -159,7 +159,7 @@ public class SHOPKEEPER extends javax.swing.JFrame {
           try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con=(Connection)
-                    DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","harshit10");
+                    DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
             Statement stmt= null;
             ResultSet rs=null;
             String SQL= "SELECT * FROM shopkeeper";
@@ -199,7 +199,7 @@ public class SHOPKEEPER extends javax.swing.JFrame {
     String SQL= "SELECT * FROM Shopkeeper";
     try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","harshit10");
+            Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
             stmt= con.createStatement();
             rs=stmt.executeQuery(SQL);
             while(rs.next()){

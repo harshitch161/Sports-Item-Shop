@@ -300,7 +300,7 @@ public class order extends javax.swing.JFrame {
         String SQL = "SELECT * FROM orderitem";
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "harshit10");
+            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "");
             stmt = con.createStatement();
 
             String ono = jTextField1.getText();
@@ -348,7 +348,7 @@ public class order extends javax.swing.JFrame {
             dModel.clear();
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "harshit10");
+                Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "");
                 Statement stm = null;
                 ResultSet rsa = null;
                 ResultSet rs1 = null;
@@ -411,7 +411,7 @@ public class order extends javax.swing.JFrame {
         try{
             String query="SELECT price FROM item WHERE item_Id = "+id;
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "harshit10");
+            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "");
             Statement stmt = null;
             ResultSet rs = null;
             stmt=con.createStatement();

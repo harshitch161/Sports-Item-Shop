@@ -97,7 +97,7 @@ public class OrderTable extends javax.swing.JFrame {
             try{	
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
             Connection con=(Connection)
-            DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","harshit10");
+            DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery(query);
             while(rs.next()){
