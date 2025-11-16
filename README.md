@@ -1,6 +1,5 @@
 # Sports Item Shop
 
-**Projects in resume**  
 Repository: [harshitch161/Sports-Item-Shop](https://github.com/harshitch161/Sports-Item-Shop)
 
 ---
